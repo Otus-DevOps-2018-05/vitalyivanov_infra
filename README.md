@@ -32,3 +32,26 @@ Run command:
 ssh someinternalhost
 ```
 
+## Homework 4
+
+testapp_IP = 35.187.175.216
+
+testapp_port = 9292
+
+<b>Command to create firewall rule:</b>
+```bash
+gcloud compute firewall-rules create default-puma-server --target-tags="puma-server" --source-ranges="0.0.0.0/0" --allow tcp:9292
+```
+
+<b>Create VM instance with a startup script execution:</b>
+```bash
+gcloud compute instances create reddit-app-with-startup-script \
+  --boot-disk-size=10GB \
+  --image-family ubuntu-1604-lts \
+  --image-project=ubuntu-os-cloud \
+  --machine-type=g1-small \
+  --tags puma-server \
+  --restart-on-failure \
+  --metadata-from-file startup-script=startup.sh
+```
+
