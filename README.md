@@ -55,3 +55,11 @@ gcloud compute instances create reddit-app-with-startup-script \
   --metadata-from-file startup-script=startup.sh
 ```
 
+## Homework 5
+
+packer folder contains packer template to create base GCP image with dependencies to run Reddit-like app.
+It can be run with the following command:
+```bash
+packer build -var-file <variables-file-name> ubuntu16.json
+``` 
+config-scripts/create-reddit-vm.sh file can be used to create GCP VM instance from created in the previous step image.
