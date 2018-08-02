@@ -63,3 +63,11 @@ It can be run with the following command:
 packer build -var-file <variables-file-name> ubuntu16.json
 ``` 
 config-scripts/create-reddit-vm.sh file can be used to create GCP VM instance from created in the previous step image.
+
+## Homework 6
+
+- File terraform/main.tf contains description of VM instance and firewall rule to deploy Reddit-like app. 
+Provisioners describe deployment of the application.
+- Files terraform/variables.tf and terraform/outputs.tf contain input and output variables correspondingly.
+File terraform/terraform.tfvars.example contains example of the input variables.
+- Command `terraform fmt` was used to format terraform files
