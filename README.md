@@ -71,3 +71,9 @@ Provisioners describe deployment of the application.
 - Files terraform/variables.tf and terraform/outputs.tf contain input and output variables correspondingly.
 File terraform/terraform.tfvars.example contains example of the input variables.
 - Command `terraform fmt` was used to format terraform files
+
+## Homework 7
+
+- Add parameterized terraform modules app, db and vpc
+- Add stage and prod environments 
+- Add storage buckets from terraform registry modules
