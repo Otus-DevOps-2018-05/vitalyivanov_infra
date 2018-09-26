@@ -83,4 +83,11 @@ File terraform/terraform.tfvars.example contains example of the input variables.
 - Add ansible folder with requirements.txt, ansible.cfg and inventory files
 - Create ansible playbook to clone git repository
 
-Execution of `ansible-playbook clone.yml` command after `ansible app -m command -a 'rm -rf ~/reddit'` shows that the value `changed` has changed from 0 to 1. It means that Ansible made some changes comparing to the previous run. In our case - made a `reddit` folder and cloned there a repository.  
+Execution of `ansible-playbook clone.yml` command after `ansible app -m command -a 'rm -rf ~/reddit'` shows that the value `changed` has changed from 0 to 1. It means that Ansible made some changes comparing to the previous run. In our case - made a `reddit` folder and cloned there a repository.
+
+## Homework 9 - Ansible 2
+
+- Create one playbook with one tasks list
+- Create one playbook with multiple tasks lists
+- Create multiple playbooks and site.yml file as an entry point to run all of them
+- Provision images made by Packer with Ansible
