@@ -64,10 +64,23 @@ packer build -var-file <variables-file-name> ubuntu16.json
 ``` 
 config-scripts/create-reddit-vm.sh file can be used to create GCP VM instance from created in the previous step image.
 
-## Homework 6
+## Homework 6 - Terraform 1
 
 - File terraform/main.tf contains description of VM instance and firewall rule to deploy Reddit-like app. 
 Provisioners describe deployment of the application.
 - Files terraform/variables.tf and terraform/outputs.tf contain input and output variables correspondingly.
 File terraform/terraform.tfvars.example contains example of the input variables.
 - Command `terraform fmt` was used to format terraform files
+
+## Homework 7 - Terraform 2
+
+- Add parameterized terraform modules app, db and vpc
+- Add stage and prod environments 
+- Add storage buckets from terraform registry modules
+
+## Homework 8 - Ansible 1
+
+- Add ansible folder with requirements.txt, ansible.cfg and inventory files
+- Create ansible playbook to clone git repository
+
+Execution of `ansible-playbook clone.yml` command after `ansible app -m command -a 'rm -rf ~/reddit'` shows that the value `changed` has changed from 0 to 1. It means that Ansible made some changes comparing to the previous run. In our case - made a `reddit` folder and cloned there a repository.  
