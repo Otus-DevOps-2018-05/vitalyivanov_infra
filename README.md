@@ -91,3 +91,10 @@ Execution of `ansible-playbook clone.yml` command after `ansible app -m command 
 - Create one playbook with multiple tasks lists
 - Create multiple playbooks and site.yml file as an entry point to run all of them
 - Provision images made by Packer with Ansible
+
+## Homework 10 - Ansible 3
+
+- Add db and app Ansible roles using ansible-galaxy
+- Add stage and prod environments with default stage environment
+- Add jdauphant.nginx community role
+- Add users playbook and encrypt users' credentials with Ansible Vault
