@@ -98,3 +98,11 @@ Execution of `ansible-playbook clone.yml` command after `ansible app -m command 
 - Add stage and prod environments with default stage environment
 - Add jdauphant.nginx community role
 - Add users playbook and encrypt users' credentials with Ansible Vault
+
+## Homework 11 - Ansible 4
+
+- Add Vagrantfile for local development
+- Split role's tasks into multiple files
+- Parameterize roles with username
+- Testing role with molecule
+- Use Ansible roles in Packer's provisioners
